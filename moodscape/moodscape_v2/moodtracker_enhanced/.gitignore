@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+backend/.env
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.env
+
+# Misc
+.DS_Store
+*.mp3
+test_output.mp3
