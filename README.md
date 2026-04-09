@@ -1,6 +1,6 @@
-# MoodTracker — Unified Full-Stack App
+# MoodScape 
 
-A student wellness mood journal with AI-powered support messages, sentiment analysis, and text-to-speech.
+An intelligent student wellness platform that combines mood journaling, real-time sentiment analysis, and AI-driven support to help users understand, manage, and improve their emotional well-being. Featuring personalized insights MoodScape transforms everyday reflections into meaningful mental health support.
 
 ## Architecture
 
