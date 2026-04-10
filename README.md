@@ -3,6 +3,34 @@
 An intelligent student wellness platform that combines mood journaling, real-time sentiment analysis, and AI-driven support to help users understand, manage, and improve their emotional well-being. Featuring personalized insights MoodScape transforms everyday reflections into meaningful mental health support.
 ## Live Demo
 https://moodscape-seven.vercel.app/
+## ✨ Features
+- 🎭 **Face Detection Mood Analysis**  
+  Detects user emotions through facial expressions for more accurate mood tracking.
+
+- 🎤 **Voice-Based Input**  
+  Allows users to input thoughts and emotions using speech, improving accessibility and ease of use.
+
+- 🧠 **AI-Powered Chatbot Support**  
+  Provides personalized emotional support and guidance using intelligent conversational AI.
+
+- 📊 **Mood Trend Visualization**  
+  Displays mood patterns over time using graphs for better self-awareness and insights.
+
+- 🔊 **Text-to-Speech Interaction**  
+  Converts AI responses into voice, making interactions more engaging and human-like.
+
+- 🎵 **Dynamic Music & Background Themes**  
+  Offers mood-based music and customizable themes to enhance user experience and emotional state.
+
+- 🔐 **Secure Authentication System**  
+  Ensures user data privacy with authentication and protected routes.
+
+- 🌐 **Community Support Section**  
+  Enables users to share experiences, provide feedback, and support others in improving their mental well-being.
+
+- 📓 **Mood Journaling**  
+  Allows users to log daily emotions and reflections for long-term tracking.
+
 
 ## Architecture
 
