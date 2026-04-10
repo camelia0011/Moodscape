@@ -16,9 +16,6 @@ https://moodscape-seven.vercel.app/
 - 📊 **Mood Trend Visualization**  
   Displays mood patterns over time using graphs for better self-awareness and insights.
 
-- 🔊 **Text-to-Speech Interaction**  
-  Converts AI responses into voice, making interactions more engaging and human-like.
-
 - 🎵 **Dynamic Music & Background Themes**  
   Offers mood-based music and customizable themes to enhance user experience and emotional state.
 
