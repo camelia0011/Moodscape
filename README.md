@@ -1,8 +1,6 @@
 # MoodScape 
 
 An intelligent student wellness platform that combines mood journaling, real-time sentiment analysis, and AI-driven support to help users understand, manage, and improve their emotional well-being. Featuring personalized insights MoodScape transforms everyday reflections into meaningful mental health support.
-## Live Demo
-https://moodscape-seven.vercel.app/
 ## ✨ Features
 - 🎭 **Face Detection Mood Analysis**  
   Detects user emotions through facial expressions for more accurate mood tracking.
