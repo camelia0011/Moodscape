@@ -1,31 +1,33 @@
-# MoodScape 
+# MoodScape
 
-An intelligent student wellness platform that combines mood journaling, real-time sentiment analysis, and AI-driven support to help users understand, manage, and improve their emotional well-being. Featuring personalized insights MoodScape transforms everyday reflections into meaningful mental health support.
+An intelligent student wellness platform that combines mood journaling, real-time sentiment analysis, and AI-driven support to help users understand, manage, and improve their emotional well-being. Featuring personalized insights, MoodScape transforms everyday reflections into meaningful mental health support.
+
 ## ✨ Features
-- 🎭 **Face Detection Mood Analysis**  
-  Detects user emotions through facial expressions for more accurate mood tracking.
 
-- 🎤 **Voice-Based Input**  
-  Allows users to input thoughts and emotions using speech, improving accessibility and ease of use.
-
-- 🧠 **AI-Powered Chatbot Support**  
-  Provides personalized emotional support and guidance using intelligent conversational AI.
-
-- 📊 **Mood Trend Visualization**  
+* 🧠 **AI-Powered Chatbot Support**
+  Provides personalized emotional support and guidance using Google Gemini conversational AI.
+* 📊 **Mood Trend Visualization**
   Displays mood patterns over time using graphs for better self-awareness and insights.
+* 🔊 **Text-to-Speech Playback**
+  Reads back journal responses aloud using ElevenLabs TTS for an accessible, immersive experience.
+* 📓 **Mood Journaling**
+  Allows users to log daily emotions and reflections with real-time VADER sentiment analysis.
+* 🔐 **Secure Authentication System**
+  JWT-based auth with protected routes, OTP email password reset, and bcrypt password hashing.
+* 🌐 **Community Support Section**
+  Enables users to share experiences, provide feedback, and support others in their mental well-being journey.
 
-- 🎵 **Dynamic Music & Background Themes**  
-  Offers mood-based music and customizable themes to enhance user experience and emotional state.
+## 🛠 Tech Stack
 
-- 🔐 **Secure Authentication System**  
-  Ensures user data privacy with authentication and protected routes.
-
-- 🌐 **Community Support Section**  
-  Enables users to share experiences, provide feedback, and support others in improving their mental well-being.
-
-- 📓 **Mood Journaling**  
-  Allows users to log daily emotions and reflections for long-term tracking.
-
+| Layer | Technology |
+|---|---|
+| Frontend | React 19, Vite, React Router, Chart.js |
+| Backend | Python 3.11, Flask, Flask-CORS |
+| Database | PostgreSQL |
+| NLP | VADER Sentiment Analysis |
+| AI Chatbot | Google Gemini API |
+| TTS | ElevenLabs API |
+| Auth | JWT, bcrypt |
 
 ## Architecture
 
@@ -52,9 +54,9 @@ moodtracker/
 
 ## Prerequisites
 
-- Python 3.11+
-- Node.js 18+
-- PostgreSQL running locally
+* Python 3.11+
+* React.js 19
+* PostgreSQL running locally
 
 ## Database Setup
 
@@ -71,7 +73,7 @@ If migrating from the old `jwt_auth` database, update `DATABASE_URL` in `backend
 ```bash
 cd backend
 cp .env.example .env      # if .env doesn't exist yet
-# Fill in your keys (see .env section below)
+# Fill in your keys (see Environment Variables below)
 
 pip install -r requirements.txt
 python app.py
@@ -98,7 +100,7 @@ npm run dev
 | `JWT_EXPIRES_IN_SECONDS` | Token lifetime (default 3600 = 1h) |
 | `EMAIL` | Gmail address for OTP emails |
 | `EMAIL_PASS` | Gmail App Password (not your login password) |
-| `GEMINI_API_KEY` | Google Gemini API key for support messages |
+| `GEMINI_API_KEY` | Google Gemini API key for chatbot support messages |
 | `ELEVENLABS_API_KEY` | ElevenLabs key for TTS (optional) |
 
 > **Gmail App Password:** Go to Google Account → Security → 2-Step Verification → App passwords
@@ -106,6 +108,7 @@ npm run dev
 ## API Reference
 
 ### Auth (no token required)
+
 | Method | Route | Body |
 |---|---|---|
 | POST | `/api/auth/register` | `{username, email, password}` |
@@ -114,6 +117,7 @@ npm run dev
 | POST | `/api/auth/reset-password` | `{email, otp, newPassword}` |
 
 ### Protected (requires `Authorization: Bearer <token>`)
+
 | Method | Route | Description |
 |---|---|---|
 | POST | `/api/journal` | Submit journal entry, get mood + trend + AI alert |
@@ -121,3 +125,7 @@ npm run dev
 | POST | `/api/speak` | TTS — body `{text}`, returns MP3 stream |
 | POST | `/api/clear` | Dev: wipe all entries for logged-in user |
 | GET | `/health` | Health check |
+
+## License
+
+MIT
